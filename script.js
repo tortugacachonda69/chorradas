@@ -3,7 +3,7 @@ function pasapalabra() {
 	string = str.replace(/a|e|o|u/g,"i");
 	strong = string.replace(/A|E|O|U/g,"I");
 	strong = strong + " :("
-	document.getElementById("salida").value = strong
+	document.getElementById("salida").innerHTML = strong
 }
 
 function color() {
