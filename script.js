@@ -16,3 +16,8 @@ function teQuiero() {
 	salidaTq = "te quiero" + " " + nombreTq;
 	document.getElementById("salidaTq").innerHTML = salidaTq
 }
+
+function frase() {
+  let palabra = ["pene","amparo","cerveza","vasito","de","agua","chernobil","concentración","mearse","en","la","boca","un","pollo","semen","meter","bebe","fascista","los","canario","y","horchata"}
+  posicion = Math.floor(Math.random() * 23)
+  getElementById(frase).innerHTML = getElementById(frase).innerHTML + palabra[posicion]
