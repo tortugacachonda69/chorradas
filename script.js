@@ -19,8 +19,7 @@ function teQuiero() {
 
 function frase() {
   const palabra = ["pene","amparo","cerveza","vasito","de","agua","chernobil","concentración","mearse","en","la","boca","un","pollo","semen","meter","bebe","fascista","los","canario","y","horchata","gusta","le","gasolina","condon","se","pone","el","follar","horno","no","si","nunca","alcohol","porro","desea","quiero","las","es","está","soy","eres","te","a","tiene","para","de","mañana","hoy"];
-  let longitud = palabra.lenght;
-  posicion = Math.floor(Math.random() * parseInt(longitud));
+  posicion = Math.floor(Math.random() * 50;
   document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra[posicion];
   }
   
