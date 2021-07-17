@@ -10,3 +10,9 @@ function color() {
 	let hex = document.getElementById("colorear").value;
 	document.getElementById('fondo').style.background = hex; 
 }
+
+function teQuiero() {
+	let nombreTq = document.getElementById("nombreTq").value;
+	salidaTq = "te quiero" + " " + nombreTq;
+	document.getElementById("salidaTq").innerHTML = salidaTq
+}
