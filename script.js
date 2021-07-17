@@ -19,7 +19,7 @@ function teQuiero() {
 
 function frase() {
   let palabra = ["pene","amparo","cerveza","vasito","de","agua","chernobil","concentración","mearse","en","la","boca","un","pollo","semen","meter","bebe","fascista","los","canario","y","horchata"];
-  posicion = Math.floor(Math.random() * 23;
+  posicion = Math.floor(Math.random() * 23);
   document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra[posicion];
   }
   
