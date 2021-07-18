@@ -18,8 +18,8 @@ function teQuiero() {
 }
 
 function frase() {
-  const palabra = ["pene","amparo","cerveza","vasito","de","agua","chernobil","concentración","mearse","en","la","boca","un","pollo","semen","meter","bebe","fascista","los","canario","y","horchata","gusta","le","gasolina","condon","se","pone","el","follar","horno","no","si","nunca","alcohol","porro","desea","quiero","las","es","está","soy","eres","te","a","tiene","para","de","mañana","hoy","director","gazpacho","tu madre","puta"];
-  posicion = Math.floor(Math.random() * parseInt(palabra.lenght));
+  const palabra = ["pene","amparo","cerveza","vasito","de","agua","chernobil","concentración","mearse","en","la","boca","un","pollo","semen","meter","bebe","fascista","los","canario","y","horchata","gusta","le","gasolina","condon","se","pone","el","follar","horno","no","si","nunca","alcohol","porro","desea","quiero","las","es","está","soy","eres","te","a","tiene","para","de","mañana","hoy","director","gazpacho","tu madre","puta","comprar","anticapitalista","bebes","anarquista","Kurti","necesitamos","sacar","algo","nuevo","colectivo","lgbt","que","sea","algun","hacer"];
+  posicion = Math.floor(Math.random() * 69);
   document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra[posicion];
   }
   
