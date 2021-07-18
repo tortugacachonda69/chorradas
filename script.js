@@ -1,11 +1,14 @@
-const palabra = ["a","un","y","de","la","los","el","en","las","es","está","soy","eres","follar","tener","beber","fumar"];
+const inicioFrase = ["porque","acho","cuando","contra","pero","y"]
 
-const palabra2 = ["pene","Amparo","cerveza","vasito","agua","concentración","boca","pollo","semen"
-,"bebé","fascista","canario","horchata","gasolina","condon",
-,"horno","alcohol","porro","director","gazpacho","madre","anticapitalista"
-,"anarquista","Kurti","colectivo","lgbt","que","algun","hacer"
-,"tecito","csgo","empresa","dinosaurio","espermatozoides","fuego","Sandra"];
-let primera = false;
+const articulo = ["la","el","un","una"]
+
+const sujeto = ["elle","Amparo","pollo","bebé","fascista","canario","horchata","gasolina","condon","horno","alcohol","porro","director","gazpacho","madre",
+"Kurti","colectivo","tecito","csgo","empresa","dinosaurio","espermatozoides","fuego","Sandra","pulpito"];
+
+const verbo = ["está","es","tiene","bebe","fuma","hace","quiere","dice","mea","siente"];
+
+const predicado = ["caca","porros","ganchillo","gilipolleces","cosas","que","si","boca","entender el género","drogarse","cerveza"] 
+let sintaxis = 0;
 
 function pasapalabra() {
 let str = document.getElementById("input").value;
@@ -27,22 +30,37 @@ document.getElementById("salidaTq").innerHTML = salidaTq;
 }
 
 function frase() {
- posicion = Math.floor(Math.random() * palabra.length);
- posicion2 = Math.floor(Math.random() * palabra2.length);
+ posicionInicioFrase = Math.floor(Math.random() * inicioFrase.length);
+ posicionArticulo = Math.floor(Math.random() * articulo.length);
+ posicionSujeto = Math.floor(Math.random() * sujeto.length);
+ posicionVerbo = Math.floor(Math.random() * verbo.length);
+ posicionPredicado = Math.floor(Math.random() * predicado.length);
 
-  if (primera == false) {
-  document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra[posicion];
-  primera = true;
-  }
-  else if (primera == true) {
-  document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra2[posicion2];
-  primera = false;
-  }
+if (sintaxis == 0) {
+document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + inicioFrase[posicionInicioFrase];
+sintaxis = 1;
+}
+else if (sintaxis == 1) {
+document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + articulo[posicionArticulo];
+sintaxis = 2;
+}
+else if (sintaxis == 2) {
+document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + sujeto[posicionSujeto];
+sintaxis = 3;
+}
+else if (sintaxis == 3) {
+document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + verbo[posicionVerbo];
+sintaxis = 4;
+}
+else if (sintaxis == 4) {
+document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + predicado[posicionPredicado];
+sintaxis = Math.floor(Math.random() * 2);
+}
 
  }
   
  function influencia() {
  let influacion = document.getElementById("vocabulario").value;
- palabra2.push(influacion);
+ sujeto.push(influacion);
  document.getElementById("vocabulario").value = "";
  }
