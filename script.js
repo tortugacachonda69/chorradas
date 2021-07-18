@@ -1,13 +1,14 @@
-const inicioFrase = ["porque","acho","cuando","contra","pero","y"]
+const inicioFrase = ["porque","acho","cuando","pero","y",""]
 
-const articulo = ["tu","mi","ese"]
+const articulo = ["tu","mi","ese","la","el"]
 
 const sujeto = ["elle","Amparo","pollo","bebé","fascista","canario","horchata","gasolina","condon","horno","alcohol","marihuana","director","gazpacho","madre",
-"Kurti","colectivo","tecito","csgo","empresa","dinosaurio","espermatozoides","fuego","Sandra","pulpito","boca"];
+"Kurti","colectivo","tecito","csgo","empresa","dinosaurio","espermatozoides","fuego","Sandra","pulpito","boca","comida","ETA!"];
 
 const verbo = ["está","es","tiene","bebe","fuma","hace","quiere","dice","mea","siente"];
 
-const predicado = ["caca","marihuana","ganchillo","gilipolleces","cosas","que","si","entender el género","drogarse","cerveza"] 
+const predicado = ["caca","marihuana","gilipolleces","que","si","entender el género","la hostia","drogarse","cerveza","contra","peliculas","colores","sonidos","lejía","caballo",
+"piscina","mariposas","alcohol","cispassing",""];
 let sintaxis = 1;
 
 function pasapalabra() {
@@ -54,13 +55,40 @@ sintaxis = 4;
 }
 else if (sintaxis == 4) {
 document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + predicado[posicionPredicado];
-sintaxis = Math.floor(Math.random() * 2);
+sintaxis = 0;
 }
 
  }
   
- function influencia() {
+function influencia() {
  let influacion = document.getElementById("vocabulario").value;
  sujeto.push(influacion);
  document.getElementById("vocabulario").value = "";
  }
+
+// Aquí empieza la función del bebé
+
+const interrogacion = ["yo q se tus muertos", "callate ya ermano me tienes ya asta la polla", "si si claro ajajajaj"];
+
+const hola = ["ni hola ni hostias","hola caracola","ey","hasta luego"];
+
+const otraCosa = ["lo que tu digas","seguro?","ok boomer","bueno vale callate","dame de comer","me parece perfecto"]
+
+function bebe() {
+let mensaje = document.getElementById("entrada").value;
+
+if (mensaje.includes("?")){
+reply = cadenaRandom(interrogacion);
+}
+else if (mensaje.includes("hola")){
+reply = cadenaRandom(hola);
+}
+else {
+reply = cadenaRandom(otraCosa);
+}
+document.getElementById("respuesta").innerHTML = reply;
+}
+
+function cadenaRandom(nombreCadena) {
+return nombreCadena[Math.floor(Math.random() * nombreCadena.length)];
+}
