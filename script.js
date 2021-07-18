@@ -30,14 +30,14 @@ function frase() {
  posicion = Math.floor(Math.random() * palabra.length);
  posicion2 = Math.floor(Math.random() * palabra2.length);
 
-if (primera == false) {
-document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra[posicion];
-primera = true;
-}
-else if (primera == true) {
-document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra2[posicion2];
-primera = false;
-}
+  if (primera == false) {
+  document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra[posicion];
+  primera = true;
+  }
+  else if (primera == true) {
+  document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra2[posicion2];
+  primera = false;
+  }
 
  }
   
