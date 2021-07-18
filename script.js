@@ -1,3 +1,5 @@
+const palabra = ["pene"];
+
 function pasapalabra() {
 	let str = document.getElementById("input").value;
 	string = str.replace(/a|e|o|u/g,"i");
@@ -18,7 +20,6 @@ function teQuiero() {
 }
 
 function frase() {
-  const palabra = ["pene"];
   posicion = Math.floor(Math.random() * palabra.length);
   document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra[posicion];
   }
