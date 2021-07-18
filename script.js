@@ -27,5 +27,5 @@ function frase() {
   function influencia() {
     let influacion = document.getElementById("vocabulario").value;
     palabra.push(influacion);
-    document.getElementById("vocabulario").value = ""
+    document.getElementById("vocabulario").value = "";
   }
