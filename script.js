@@ -18,7 +18,7 @@ function teQuiero() {
 }
 
 function frase() {
-  const palabra = ["pene","Amparo","cerveza","vasito","de","agua","concentración","mear","en","la","boca","un","pollo","semen","meter","bebe","fascista","los","canario","y","horchata","gusta","le","gasolina","condon","se","pone","el","follar","horno","no","si","nunca","alcohol","porro","desea","quiero","las","es","está","soy","eres","te","a","tiene","para","de","mañana","hoy","director","gazpacho","tu","madre","comprar","anticapitalista","bebes","anarquista","Kurti","necesitamos","sacar","algo","nuevo","colectivo","lgbt","que","sea","algun","hacer","tecito","csgo","empresa","dinosaurio","espermatozoides","sube","aprende","fuego","Sandra"];
+  const palabra = ["pene"];
   posicion = Math.floor(Math.random() * palabra.length);
   document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra[posicion];
   }
