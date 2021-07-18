@@ -8,7 +8,7 @@ const sujeto = ["elle","Amparo","pollo","bebé","fascista","canario","horchata",
 const verbo = ["está","es","tiene","bebe","fuma","hace","quiere","dice","mea","siente"];
 
 const predicado = ["caca","porros","ganchillo","gilipolleces","cosas","que","si","boca","entender el género","drogarse","cerveza"] 
-let sintaxis = 0;
+let sintaxis = 1;
 
 function pasapalabra() {
 let str = document.getElementById("input").value;
