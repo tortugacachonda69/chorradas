@@ -1,6 +1,6 @@
-const inicioFrase = ["porque","acho","cuando","pero","y",""]
+﻿const inicioFrase = ["porque","acho","cuando","pero","y",""]
 
-const articulo = ["tu","mi","ese","la","el"]
+const articulo = ["tu","mi","ese"]
 
 const sujeto = ["elle","Amparo","pollo","bebé","fascista","canario","horchata","gasolina","condon","horno","alcohol","marihuana","director","gazpacho","madre",
 "Kurti","colectivo","tecito","csgo","empresa","dinosaurio","espermatozoides","fuego","Sandra","pulpito","boca","comida","ETA!"];
