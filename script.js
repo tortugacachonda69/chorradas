@@ -1,31 +1,48 @@
-const palabra = ["pene","Amparo","cerveza","vasito","de","agua","concentración","mear","en","la","boca","un","pollo","semen","meter","bebe","fascista","los","canario","y","horchata","gusta","le","gasolina","condon","se","pone","el","follar","horno","no","si","nunca","alcohol","porro","desea","quiero","las","es","está","soy","eres","te","a","tiene","para","de","mañana","hoy","director","gazpacho","tu","madre","comprar","anticapitalista","bebes","anarquista","Kurti","necesitamos","sacar","algo","nuevo","colectivo","lgbt","que","algun","hacer","tecito","csgo","empresa","dinosaurio","espermatozoides","sube","aprende","fuego","Sandra"];
+const palabra = ["a","un","y","de","la","los","el","en","las","es","está","soy","eres","follar","tener","beber","fumar"];
+
+const palabra2 = ["pene","Amparo","cerveza","vasito","agua","concentración","boca","pollo","semen"
+,"bebé","fascista","canario","horchata","gasolina","condon",
+,"horno","alcohol","porro","director","gazpacho","madre","anticapitalista"
+,"anarquista","Kurti","colectivo","lgbt","que","algun","hacer"
+,"tecito","csgo","empresa","dinosaurio","espermatozoides","fuego","Sandra"];
+let primera = false;
 
 function pasapalabra() {
-	let str = document.getElementById("input").value;
-	string = str.replace(/a|e|o|u/g,"i");
-	strong = string.replace(/A|E|O|U/g,"I");
-	strong = strong + " :(";
-	document.getElementById("salida").innerHTML = strong;
+let str = document.getElementById("input").value;
+string = str.replace(/a|e|o|u/g,"i");
+strong = string.replace(/A|E|O|U/g,"I");
+strong = strong + " :(";
+document.getElementById("salida").innerHTML = strong;
 }
 
 function color() {
-	let hex = document.getElementById("colorear").value;
-	document.getElementById('fondo').style.background = hex; 
+let hex = document.getElementById("colorear").value;
+document.getElementById('fondo').style.background = hex; 
 }
 
 function teQuiero() {
-	let nombreTq = document.getElementById("nombreTq").value;
-	salidaTq = "te quiero" + " " + nombreTq;
-	document.getElementById("salidaTq").innerHTML = salidaTq;
+let nombreTq = document.getElementById("nombreTq").value;
+salidaTq = "te quiero" + " " + nombreTq;
+document.getElementById("salidaTq").innerHTML = salidaTq;
 }
 
 function frase() {
-  posicion = Math.floor(Math.random() * palabra.length);
-  document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra[posicion];
-  }
+ posicion = Math.floor(Math.random() * palabra.length);
+ posicion2 = Math.floor(Math.random() * palabra2.length);
+
+if (primera == false) {
+document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra[posicion];
+primera = true;
+}
+else if (primera == true) {
+document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra2[posicion2];
+primera = false;
+}
+
+ }
   
-  function influencia() {
-    let influacion = document.getElementById("vocabulario").value;
-    palabra.push(influacion);
-    document.getElementById("vocabulario").value = "";
-  }
+ function influencia() {
+ let influacion = document.getElementById("vocabulario").value;
+ palabra2.push(influacion);
+ document.getElementById("vocabulario").value = "";
+ }
