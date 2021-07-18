@@ -23,3 +23,7 @@ function frase() {
   document.getElementById("frase").innerHTML = document.getElementById("frase").innerHTML + " " + palabra[posicion];
   }
   
+  function influencia() {
+    let influacion = document.getElementById("vocabulario").value;
+    palabra.push(influacion);
+  }
