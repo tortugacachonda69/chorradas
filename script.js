@@ -1,13 +1,13 @@
 const inicioFrase = ["porque","acho","cuando","contra","pero","y"]
 
-const articulo = ["la","el","un","una"]
+const articulo = ["tu","mi","ese"]
 
-const sujeto = ["elle","Amparo","pollo","bebé","fascista","canario","horchata","gasolina","condon","horno","alcohol","porro","director","gazpacho","madre",
-"Kurti","colectivo","tecito","csgo","empresa","dinosaurio","espermatozoides","fuego","Sandra","pulpito"];
+const sujeto = ["elle","Amparo","pollo","bebé","fascista","canario","horchata","gasolina","condon","horno","alcohol","marihuana","director","gazpacho","madre",
+"Kurti","colectivo","tecito","csgo","empresa","dinosaurio","espermatozoides","fuego","Sandra","pulpito","boca"];
 
 const verbo = ["está","es","tiene","bebe","fuma","hace","quiere","dice","mea","siente"];
 
-const predicado = ["caca","porros","ganchillo","gilipolleces","cosas","que","si","boca","entender el género","drogarse","cerveza"] 
+const predicado = ["caca","marihuana","ganchillo","gilipolleces","cosas","que","si","entender el género","drogarse","cerveza"] 
 let sintaxis = 1;
 
 function pasapalabra() {
